@@ -1,0 +1,4 @@
+how to create entities 
+how nest create automatic repositories and how it works with service 
+whitelist in validationPipe 
+Dtos
