@@ -13,8 +13,8 @@ export class UsersService {
   }
 
   findOne(id: number) {
-    const user = this.repo.findOneBy({ id });
-    return user;
+    if (!id) return null;
+    return this.repo.findOneBy({ id });
   }
 
   find(email: string) {
