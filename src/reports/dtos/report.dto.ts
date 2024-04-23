@@ -5,6 +5,9 @@ export class Report {
   id: number;
 
   @Expose()
+  approved: boolean;
+
+  @Expose()
   price: number;
 
   @Expose()

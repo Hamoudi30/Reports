@@ -4,10 +4,22 @@ content-type: application/json
 
 {
   "price" : 123,
-  "make" : "first", 
-  "model" : "bmw",
+  "make" : "then", 
+  "model" : "now",
   "year" : 2005,
   "mileage" : 123.1223,
   "lng" : 0,
   "lat" : 0
 }
+
+### approve a report
+PATCH http://localhost:3000/reports/17
+content-type: application/json
+
+{
+  "approved" : true
+}
+
+
+### Get an estimate for an existing vehicle
+GET http://localhost:3000/reports?make=second&model=now&lng=0&lat=0&mileage=20000&year=2021
