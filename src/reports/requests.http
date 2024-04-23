@@ -1,0 +1,13 @@
+## create a report 
+POST http://localhost:3000/reports/create-report
+content-type: application/json
+
+{
+  "price" : 123,
+  "make" : "first", 
+  "model" : "bmw",
+  "year" : 2005,
+  "mileage" : 123.1223,
+  "lng" : 0,
+  "lat" : 0
+}
